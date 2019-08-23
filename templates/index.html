@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GeoCoding web Service</title>
+    <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/index_css.css')}}">
+</head>
+<body>
+    <h1>GeoCoder Website</h1>
+    <h3>Please upload a csv file which contains Address column</h3>
+    <div class="fileInfo">
+        <form action="{{url_for ('success')}}" method="post" enctype="multipart/form-data">
+            <input type="file" id="input_file" name="file_name">
+            <input type="submit" value="Submit" name="Submit">
+        </form>
+    </div>
+    <div class="table">
+        {% for table in tables %}
+        {{ table|safe }}
+        {% endfor %}
+    </div>
+</body>
+</html>

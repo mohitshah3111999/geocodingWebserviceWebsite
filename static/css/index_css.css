@@ -1,0 +1,27 @@
+body
+{
+    background-color: #00cc99;
+    color: white;
+    margin  : 15px;
+}
+h1
+{
+    font-size: 60px;
+    text-align: center;
+    font-family: sans-serif;
+}
+h3
+{
+    font-size: 30px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.fileInfo
+{
+    padding-left: 400px;
+}
+.table
+{
+    padding-left: 250px;
+    padding-top: 50px;
+}
